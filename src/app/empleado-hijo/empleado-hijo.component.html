@@ -1,0 +1,12 @@
+<p>empleado-hijo works!</p>
+<div>
+  <p>
+    {{ empleadoLista.nombre }} {{ empleadoLista.apellido }}
+    {{ empleadoLista.cargo }} cobra
+    {{ empleadoLista.salario }}
+  </p>
+</div>
+<div *ngFor=" let caracteristi of arrayCaracteristicas">
+  <p>{{caracteristi}} </p>
+  </div>
+<app-empleado-caracteristicas (catacteristicasEmpleados)="agregarCARACT($event)"></app-empleado-caracteristicas>
